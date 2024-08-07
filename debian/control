@@ -1,0 +1,177 @@
+Source: ledspicer
+Section: electronics
+Priority: optional
+Maintainer: Patricio Rossi <meduzapat@netscape.net>
+Build-Depends:
+	debhelper (>= 10),
+	mime-support,
+	cpio,
+	mawk,
+	pkg-config,
+	file,
+	libusb-1.0-0-dev (>= 2:1~),
+	libpulse-dev (>= 0.99~),
+	libtinyxml2-dev (>= 5~),
+	libpthread-stubs0-dev (>= 0.3~)
+Standards-Version: 4.1.2
+Homepage: https://sourceforge.net/p/ledspicer/wiki/Home/
+Vcs-Browser: https://github.com/meduzapat/LEDSpicer
+Vcs-Git: https://github.com/meduzapat/LEDSpicer.git
+
+Package: ledspicer
+Architecture: any
+Depends:
+	${shlibs:Depends},
+	${misc:Depends}
+Description: LED Manager for linux
+ LEDSpicer is a program that will handle several LED controller boards to
+ create animations, effects and display profiles, to be used with arcade
+ cabinets, or other projects that require an interaction with their
+ LEDs controllers.
+ .
+ This package will install the following binaries:
+  * ledspicerd (main daemon)
+  * emitter (command line application to send commands to ledspicerd)
+  * inputseeker (utility program to detect input devices and codes)
+
+Package: libledspicer1
+Section: libs
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: Shared library
+ LEDSpicer is a program that will handle several LED controller boards to
+ create animations, effects and display profiles, to be used with arcade
+ cabinets, or other projects that require an interaction with their
+ LEDs controllers.
+ .
+ This package will install the shared libraries
+
+Package: libledspicer1-dev
+Section: libdevel
+Architecture: any
+Priority: optional
+Depends: 
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: Headers for development
+ LEDSpicer is a program that will handle several LED controller boards to
+ create animations, effects and display profiles, to be used with arcade
+ cabinets, or other projects that require an interaction with their
+ LEDs controllers.
+ .
+ This package will install the development header files.
+
+Package: ledspicer-nanoled
+Section: libs
+Architecture: any
+Priority: optional
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: Ultimarc NanoLed driver
+ LEDSpicer is a program that will handle several LED controller boards to
+ create animations, effects and display profiles, to be used with arcade
+ cabinets, or other projects that require an interaction with their
+ LEDs controllers.
+ .
+ This package will install the output plugin for the Ultimarc NanoLed, a
+ 60 leds controller.
+ Install this package only if you own this hardware.
+
+Package: ledspicer-pacdrive
+Section: libs
+Architecture: any
+Priority: optional
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: Ultimarc PacDrive driver
+ LEDSpicer is a program that will handle several LED controller boards to
+ create animations, effects and display profiles, to be used with arcade
+ cabinets, or other projects that require an interaction with their
+ LEDs controllers.
+ .
+ This package contains the output plugin for the Ultimarc PacDrive, a
+ 16 leds controller.
+ Install this package only if you own this hardware.
+
+Package: ledspicer-pacled64
+Section: libs
+Architecture: any
+Priority: optional
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: Ultimarc PacLed 64 driver
+ LEDSpicer is a program that will handle several LED controller boards to
+ create animations, effects and display profiles, to be used with arcade
+ cabinets, or other projects that require an interaction with their
+ LEDs controllers.
+ .
+ This package contains the output plugin for the Ultimarc PacLed 64, a
+ 64 leds controller.
+ Install this package only if you own this hardware.
+
+Package: ledspicer-ultimaio
+Section: libs
+Architecture: any
+Priority: optional
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: Ultimarc Ultimate IO driver
+ LEDSpicer is a program that will handle several LED controller boards to
+ create animations, effects and display profiles, to be used with arcade
+ cabinets, or other projects that require an interaction with their
+ LEDs controllers.
+ .
+ This package contains the output plugin for the Ultimarc Ultimate IO, a
+ 96 leds controller.
+ Install this package only if you own this hardware.
+
+Package: ledspicer-ledwiz32
+Section: libs
+Architecture: any
+Priority: optional
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Groovy Game Gear LedWiz driver
+ LEDSpicer is a program that will handle several LED controller boards to
+ create animations, effects and display profiles, to be used with arcade
+ cabinets, or other projects that require an interaction with their
+ LEDs controllers.
+ .
+ This package contains the output plugin for the Groovy Game Gear LedWiz, a
+ 32 leds controller.
+ Install this package only if you own this hardware.
+
+Package: ledspicer-howler
+Section: libs
+Architecture: any
+Priority: optional
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: WolfWareTech Howler driver
+ LEDSpicer is a program that will handle several LED controller boards to
+ create animations, effects and display profiles, to be used with arcade
+ cabinets, or other projects that require an interaction with their
+ LEDs controllers.
+ .
+ This package contains the output plugin for the WolfWareTech Howler
+ controller, a 96 leds controller.
+ Install this package only if you own this hardware.
+
+Package: ledspicer-examples
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: Documentation and examples
+ LEDSpicer is a program that will handle several LED controller boards to
+ create animations, effects and display profiles, to be used with arcade
+ cabinets, or other projects that require an interaction with their
+ LEDs controllers.
+ .
+ This package contains documentation and some examples.
+ I also include the sysmted service file and several data files to replace
+ the default ones.
+

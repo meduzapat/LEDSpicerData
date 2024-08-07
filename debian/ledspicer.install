@@ -1,0 +1,4 @@
+usr/bin
+usr/lib/*/ledspicer/actors
+usr/lib/*/ledspicer/inputs
+usr/share/ledspicer/*

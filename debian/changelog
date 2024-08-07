@@ -1,0 +1,112 @@
+ledspicer (0.4.5-4) focal; urgency=medium
+
+  * Improved dump output.
+  * Changed the way the input plugin works.
+  * Input plugins now accept the same plugin multiple times.
+  * Updated readme
+
+ -- Patricio Rossi <meduzapat@netscape.net>  Sat, 13 Jun 2020 02:38:36 -0500
+
+ledspicer (0.4.5-3) focal; urgency=medium
+
+  * Fixed wrong library.
+
+ -- Patricio Rossi <meduzapat@netscape.net>  Fri, 12 Jun 2020 18:42:36 -0500
+
+ledspicer (0.4.5-2) Bionic; urgency=medium
+
+  * Fixed build errors.
+
+ -- Patricio Rossi <meduzapat@netscape.net>  Fri, 12 Jun 2020 16:42:36 -0500
+
+ledspicer (0.4.5-1) focal; urgency=medium
+
+  * Fixed build error due to a typo.
+
+ -- Patricio Rossi <meduzapat@netscape.net>  Fri, 12 Jun 2020 15:42:36 -0500
+
+ledspicer (0.4.5) focal; urgency=medium
+
+  * Changes packaging settings
+  * Build process.
+  * Removed confused configuration steps.
+  * Simplified examples and docs.
+
+ -- Patricio Rossi <meduzapat@netscape.net>  Fri, 14 Jun 2020 20:38:36 -0400
+
+ledspicer (0.4.4) focal; urgency=medium
+
+  * This release improves overall code and speed, fixes some bugs specially on
+    the input mame plugin.
+
+ -- Patricio Rossi <meduzapat@netscape.net>  Wed, 10 Jun 2020 20:38:36 -0400
+
+ledspicer (0.4.3) unstable; urgency=medium
+
+  * Fixes an issue with ledwiz controller
+  * Allows empty layouts
+
+ -- Patricio Rossi <meduzapat@netscape.net>  14 Apr 2020 20:38:36 -0400
+
+ledspicer (0.4.2) unstable; urgency=medium 
+
+  * This release is to fix some issues on 0.4.1 it also adds support for
+    multiple pacdrives
+
+ -- Patricio Rossi <meduzapat@netscape.net>  5 Apr 2020 20:38:36 -0400
+ 
+ledspicer (0.4.1) unstable; urgency=medium 
+
+    * Actors can be start or finished using time or cycles (frames)
+    * Howler controller fully functional and tested.
+    * Fixed transitions.
+    * Improved transitions, now only frame actors can be used for transitions.
+    * Improved code so when the device have no changes on the internal data,
+      nothing is transmitted to save CPU.
+    * Added more debug to actors when running DEVELOP
+
+ -- Patricio Rossi <meduzapat@netscape.net>  8 Mar 2020 20:38:36 -0400
+
+ledspicer (0.4.0) unstable; urgency=medium 
+
+   * New release is out includes two new hardware devices and several fixes.
+
+ -- Patricio Rossi <meduzapat@netscape.net>  18 Feb 2020 20:38:36 -0400
+ 
+ledspicer (0.3.9) unstable; urgency=medium 
+
+   * This is the release 0.3.9
+   * Improves Pulseaudio plugin render.
+   * new PulseAudio mode Wave.
+   * Adds new actor plugin FileReader.
+   * Lot of bug fixes.
+   * Code improvement.
+   *Packages.
+
+ -- Patricio Rossi <meduzapat@netscape.net>  21 Nov 2019 20:38:36 -0400
+
+ledspicer (0.3.8) unstable; urgency=medium 
+
+  * This is the release 0.3.8
+
+ -- Patricio Rossi <meduzapat@netscape.net>  8 Sep 2019 20:38:36 -0400
+
+ledspicer (0.3.7) unstable; urgency=medium 
+
+  * This is the release 0.3.7
+
+ -- Patricio Rossi <meduzapat@netscape.net>  8 Sep 2019 20:38:36 -0400
+
+ledspicer (0.3.6) unstable; urgency=medium
+
+  * Includes all the new Input plugins functionality
+
+ -- Patricio Rossi <meduzapat@netscape.net>  30 Jun 2019 20:38:36 -0400
+
+ledspicer (0.3.5) unstable; urgency=medium 
+
+  * Adds profile dump
+  * Allows to enable or disable output device plugins when building.
+
+ -- Patricio Rossi <meduzapat@netscape.net>  13 Apr 2019 20:38:36 -0400
+
