@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<theme name="Synthwave" author="Patricio A. Rossi (MeduZa)" version="1.0.0">
-	<description>1980s Outrun. Hot magenta and electric cyan wireframes drifting over a perspective grid floor; cream-lavender daylight blueprint in light mode.</description>
-</theme>
+<LEDSpicer
+  version="1.1"
+  type="Theme"
+  name="Synthwave"
+  format="1.0"
+  author="Patricio A. Rossi (MeduZa)"
+  description="1980s Outrun. Hot magenta and electric cyan wireframes drifting over a perspective grid floor; cream-lavender daylight blueprint in light mode."
+/>

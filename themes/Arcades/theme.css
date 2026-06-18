@@ -1,0 +1,170 @@
+/* LEDSpicerUI — Arcade Neon Theme */
+
+@define-color color-window-bg  #050814;
+@define-color color-box-text    #D8F4FF;
+
+@define-color color-selected-bg     rgba(0,110,190,0.35);
+@define-color color-selected-border rgba(80,220,255,0.95);
+@define-color color-selected-glow   rgba(80,220,255,0.55);
+
+@define-color color-edit-hover   #58D8FF;
+@define-color color-copy-hover   #00E6B8;
+@define-color color-delete-hover #FF5C7A;
+
+@define-color color-type-device        rgba(0,180,120,0.45);
+@define-color color-type-device-glow   rgba(0,255,180,0.75);
+@define-color color-type-device-border rgba(0,255,180,0.95);
+
+@define-color color-type-restrictor        rgba(70,170,255,0.55);
+@define-color color-type-restrictor-glow   rgba(80,220,255,0.80);
+@define-color color-type-restrictor-border rgba(80,220,255,1);
+
+@define-color color-type-element        rgba(140,80,255,0.55);
+@define-color color-type-element-glow   rgba(180,120,255,0.85);
+@define-color color-type-element-border rgba(180,120,255,1);
+
+@define-color color-type-group        rgba(255,190,60,0.45);
+@define-color color-type-group-glow   rgba(255,210,80,0.80);
+@define-color color-type-group-border rgba(255,220,120,1.0);
+
+@define-color color-type-input        rgba(60,180,255,0.45);
+@define-color color-type-input-glow   rgba(80,220,255,0.80);
+@define-color color-type-input-border rgba(120,240,255,1.0);
+
+@define-color color-type-animation        rgba(220,80,255,0.45);
+@define-color color-type-animation-glow   rgba(240,120,255,0.85);
+@define-color color-type-animation-border rgba(255,160,255,1.0);
+
+@define-color color-type-profile        rgba(0,200,140,0.45);
+@define-color color-type-profile-glow   rgba(0,255,180,0.80);
+@define-color color-type-profile-border rgba(120,255,210,1.0);
+
+@define-color color-type-process        rgba(255,120,40,0.45);
+@define-color color-type-process-glow   rgba(255,160,80,0.85);
+@define-color color-type-process-border rgba(255,190,120,1.0);
+
+@define-color color-type-directory        rgba(220,225,235,0.20);
+@define-color color-type-directory-glow   rgba(230,240,255,0.75);
+@define-color color-type-directory-border rgba(240,245,255,1.0);
+
+@define-color color-type-system-glow   rgba(230,240,255,0.85);
+@define-color color-type-system-border rgba(240,245,255,0.85);
+
+window { background-color: @color-window-bg; }
+
+.BoxButton label {
+	color: @color-box-text;
+	text-shadow:
+		1px 1px 0 rgba(0,0,0,0.8),
+		-1px 1px 0 rgba(0,0,0,0.8),
+		1px -1px 0 rgba(0,0,0,0.8),
+		-1px -1px 0 rgba(0,0,0,0.8);
+}
+
+.BoxButton.DeviceBoxButton {
+	background-color: @color-type-device;
+	border-color:     @color-type-device-border;
+	box-shadow:       0 0 9px @color-type-device-glow;
+}
+
+.BoxButton.ElementBoxButton {
+	background-color: @color-type-element;
+	border-color:     @color-type-element-border;
+	box-shadow:       0 0 9px @color-type-element-glow;
+}
+
+.BoxButton.RestrictorMapBoxButton,
+.BoxButton.RestrictorBoxButton {
+	background-color: @color-type-restrictor;
+	border-color:     @color-type-restrictor-border;
+	box-shadow:       0 0 9px @color-type-restrictor-glow;
+}
+
+.BoxButton.GroupBoxButton {
+	background-color: @color-type-group;
+	border-color:     @color-type-group-border;
+	box-shadow:       0 0 9px @color-type-group-glow;
+}
+
+/* Animation / Actor */
+.BoxButton.AnimationBoxButton,
+.BoxButton.ActorBoxButton {
+	background-color: @color-type-animation;
+	border-color:     @color-type-animation-border;
+	box-shadow:       0 0 9px @color-type-animation-glow;
+}
+
+/* Input / InputMap / InputSource / InputLinkMap */
+.BoxButton.InputBoxButton,
+.BoxButton.InputMapBoxButton,
+.BoxButton.InputSourceBoxButton,
+.BoxButton.LinkBoxButton {
+	background-color: @color-type-input;
+	border-color:     @color-type-input-border;
+	box-shadow:       0 0 9px   @color-type-input-glow;
+}
+
+/* Profile */
+.BoxButton.ProfileBoxButton {
+	background-color: @color-type-profile;
+	border-color:     @color-type-profile-border;
+	box-shadow:       0 0 9px @color-type-profile-glow;
+}
+
+/* Process */
+.BoxButton.ProcessBoxButton {
+	background-color: @color-type-process;
+	border-color:     @color-type-process-border;
+	box-shadow:       0 0 9px @color-type-process-glow;
+}
+
+.BoxButton.system {
+	border-color: @color-type-system-border;
+	box-shadow:   0 0 9px @color-type-system-glow;
+}
+
+.BoxButton.DirectoryBoxButton {
+	background-color: @color-type-directory;
+	border-color:     @color-type-directory-border;
+	box-shadow:       0 0 9px @color-type-directory-glow;
+}
+
+/* State rules — after type blocks so equal-specificity (b=2) source
+ * order resolves to these when the tile is hovered/selected. */
+.BoxButton:hover {
+	border-color: @color-selected-border;
+	box-shadow:   0 0 12px @color-selected-glow;
+}
+
+.BoxButton:selected,
+.ThemeTile:selected {
+	background-color: @color-selected-bg;
+	border-color:     @color-selected-border;
+	box-shadow:       0 0 9px @color-selected-glow;
+}
+
+/* Directory keeps its own identity on hover (b=3 beats .BoxButton:hover). */
+.BoxButton.DirectoryBoxButton:hover {
+	border-color: @color-type-directory-border;
+	box-shadow:   0 0 12px @color-type-directory-glow;
+}
+
+/* Action accents — neon palette overrides base hex by provider priority. */
+.BoxBackgroundEdit:hover   { background: @color-edit-hover; }
+.BoxBackgroundCopy:hover   { background: @color-copy-hover; }
+.BoxBackgroundDelete:hover { background: @color-delete-hover; }
+
+.zoneCanvas { background-image: url("backgroundNormal.png"); }
+.zoneCanvas.groups,
+.zoneCanvas.processes,
+.zoneCanvas.inputs,
+.zoneCanvas.inputSources,
+.zoneCanvas.inputMaps,
+.zoneCanvas.animations,
+.zoneCanvas.profiles {
+	background-image: url("backgroundWide.png");
+}
+
+.layoutPreview { background-image: url("backgroundLayout.png"); }
+.zoneCanvas.themes { background-image: url("backgroundThemeSelector.png"); }
+
