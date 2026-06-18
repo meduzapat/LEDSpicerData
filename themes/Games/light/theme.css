@@ -1,0 +1,74 @@
+/* ============================================================
+ * LEDSpicer Theme — "Games" (LIGHT)
+ * Same arcade-neon theme under bright lighting. Color overrides only.
+ * Builds on style-base.css — does NOT change sizing, spacing,
+ * layout behavior, or typography.
+ * Author: Patricio A. Rossi (MeduZa)
+ * ============================================================ */
+
+/* ── Core palette ─────────────────────────────────────────── */
+/* Bright arcade sky, cyan/blue accents, soft pastel neon */
+
+@define-color theme_bg_color              #e9f1ff;
+@define-color theme_base_color            #f6faff;
+@define-color theme_fg_color              #0d1d3c;
+@define-color theme_text_color            #081530;
+
+@define-color theme_selected_bg_color     #2f6bff;
+@define-color theme_selected_fg_color     #ffffff;
+@define-color theme_selected_bg_color_alt #1e54e0;
+
+@define-color insensitive_bg_color        #dce7f7;
+@define-color insensitive_fg_color        #8b9bc0;
+@define-color insensitive_base_color      #eef3fb;
+
+@define-color borders                     #b7ccf0;
+@define-color unfocused_borders           #c8d8f2;
+
+/* Unfocused mirrors */
+@define-color theme_unfocused_bg_color    #eaf1fc;
+@define-color theme_unfocused_base_color  #f4f8ff;
+@define-color theme_unfocused_fg_color    #34466a;
+@define-color theme_unfocused_text_color  #14233f;
+@define-color theme_unfocused_selected_bg_color #4d7cff;
+@define-color theme_unfocused_selected_fg_color #ffffff;
+@define-color unfocused_insensitive_color #dce7f7;
+
+/* Tooltips */
+@define-color theme_tooltip_bg_color      #11224a;
+@define-color theme_tooltip_fg_color      #eaf6ff;
+
+/* ── Accent / semantic colors ─────────────────────────────── */
+/* cyan + blue arcade accents, soft pastel neon, readable signals */
+
+@define-color accent_color                #0aa6c4;
+@define-color accent_fg_color             #ffffff;
+@define-color link_color                  #1565d8;
+@define-color link_visited_color          #b3318f;
+
+@define-color warning_color               #b9760a;
+@define-color error_color                 #d8364f;
+@define-color success_color               #0a9a6c;
+
+/* ── Hotspot legibility ───────────────────────────────────── */
+/* Bright neon hotspots live in the artwork; give item tiles a more
+ * opaque light fill so labels stay crisp above the background.
+ * Color only — sizing/spacing untouched. */
+
+.BoxButton {
+	background-color: alpha(#ffffff, 0.84);
+}
+
+.BoxButton:hover {
+	border-color: alpha(@accent_color, 0.7);
+	box-shadow:   0 0 8px alpha(@accent_color, 0.3);
+}
+
+.BoxButton:selected {
+	background-color: alpha(@theme_selected_bg_color, 0.9);
+	box-shadow:       0 0 12px alpha(#2f6bff, 0.5);
+}
+
+.connectorBox {
+	background-color: alpha(#ffffff, 0.72);
+}
